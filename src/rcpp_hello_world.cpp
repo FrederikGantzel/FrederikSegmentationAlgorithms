@@ -5,9 +5,10 @@ using namespace Rcpp;
 // [[Rcpp::export]]
 List rcpp_hello_world() {
 
-    CharacterVector x = CharacterVector::create( "foo", "bar" )  ;
+    CharacterVector x = CharacterVector::create( "h", "i" )  ;
     NumericVector y   = NumericVector::create( 0.0, 1.0 ) ;
-    List z            = List::create( x, y ) ;
+    CharacterVector lag = CharacterVector::create("skyd mig");
+    List z            = List::create( x, y, lag ) ;
 
     return z ;
 }
