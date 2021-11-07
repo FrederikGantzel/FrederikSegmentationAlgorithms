@@ -1,6 +1,6 @@
-\name{Frederik.Dynprog-package}
-\alias{Frederik.Dynprog-package}
-\alias{Frederik.Dynprog}
+\name{FrederikSegmentationAlgorithms-package}
+\alias{FrederikSegmentationAlgorithms-package}
+\alias{FrederikSegmentationAlgorithms}
 \docType{package}
 \title{
   A short title line describing what the package does
