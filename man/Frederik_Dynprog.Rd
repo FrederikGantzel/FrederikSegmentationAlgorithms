@@ -17,6 +17,6 @@ Frederik_Dynprog(input_data_vector, max_segments)
 the calculated optimal cost matrix, with dimentions: number of data points x maximum segments
 }
 \examples{
-dataset = sample(rep(1:2, l=nrow(iris)))
+dataset = c(1,2,3,4,5,6,7,8,9,10)
 Frederik_Dynprog(dataset, 5)
 }

@@ -17,6 +17,6 @@ Frederik_Binseg(vector_with_data, max_segments)
 a vector with length max_segments, that contains the loss values for model sizes form 1 up to max_segments
 }
 \examples{
-dataset = sample(rep(1:2, l=nrow(iris)))
+dataset = c(1,2,3,4,5,6,7,8,9,10)
 Frederik_Binseg(dataset, 5)
 }
