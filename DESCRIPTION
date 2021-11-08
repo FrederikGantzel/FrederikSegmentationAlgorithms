@@ -4,11 +4,9 @@ Title: Frederik Segmentation Algorithms
 Version: 2021.11.07
 Author: Frederik Gantzel
 Maintainer: Frederik Gantzel <fvg6@nau.edu>
-Description: Segmentation algorithms for CS599 "Unsupervised Learning"
-              R package project 2, NAU, Fall semester 2021
+Description: Segmentation algorithms for CS599 "Unsupervised Learning" R package project 2, NAU, Fall semester 2021
 License: GPL-3
-RoxygenNote: 7.1.2
 LinkingTo: Rcpp
 Depends: data.table
 Imports: Rcpp
-Suggests: testthat
+Suggests: testthat, binsegRcpp, jointseg

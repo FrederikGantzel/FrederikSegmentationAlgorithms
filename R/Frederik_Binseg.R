@@ -1,15 +1,3 @@
-#' Binary Segmentation Algorithm
-#'
-#' Runs the binary segmentation algorithm on an input data vector, and returns loss values for each model size
-#'
-#' @param vector_with_data the input data vector, must be purely numeric.
-#' @param max_segments the maximum number of segments that the algorithm will attempt. Must be at least one, but less than the number of data points in the input data vector
-#' @return a vector with length max_segments, that contains the loss values for model sizes form 1 up to max_segments
-#' @export
-#' @examples
-#' dataset = sample(rep(1:2, l=nrow(iris)))
-#' Frederik_Binseg(dataset, 5)
-
 
 Frederik_Binseg = function(vector_with_data, max_segments) {
   
