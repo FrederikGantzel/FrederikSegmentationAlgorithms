@@ -21,4 +21,5 @@ Frederik_Dynprog (C++ version) and Rcpp_Dynprog (Rcpp version) are two versions 
 data_set = iris[,2]
 
 Rcpp_Dynprog(data_set, 5)
+
 Frederik_Dynprog(data_set, 5)
