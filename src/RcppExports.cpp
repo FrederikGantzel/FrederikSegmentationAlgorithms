@@ -10,13 +10,27 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// Frederik_Dynprog
-CharacterVector Frederik_Dynprog();
-RcppExport SEXP _FrederikSegmentationAlgorithms_Frederik_Dynprog() {
+// Rcpp_Dynprog
+NumericMatrix Rcpp_Dynprog(NumericVector input_data_vector, int max_segments);
+RcppExport SEXP _FrederikSegmentationAlgorithms_Rcpp_Dynprog(SEXP input_data_vectorSEXP, SEXP max_segmentsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(Frederik_Dynprog());
+    Rcpp::traits::input_parameter< NumericVector >::type input_data_vector(input_data_vectorSEXP);
+    Rcpp::traits::input_parameter< int >::type max_segments(max_segmentsSEXP);
+    rcpp_result_gen = Rcpp::wrap(Rcpp_Dynprog(input_data_vector, max_segments));
+    return rcpp_result_gen;
+END_RCPP
+}
+// Frederik_Dynprog_interface
+NumericMatrix Frederik_Dynprog_interface(NumericVector input_data_vector, int max_segments);
+RcppExport SEXP _FrederikSegmentationAlgorithms_Frederik_Dynprog_interface(SEXP input_data_vectorSEXP, SEXP max_segmentsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type input_data_vector(input_data_vectorSEXP);
+    Rcpp::traits::input_parameter< int >::type max_segments(max_segmentsSEXP);
+    rcpp_result_gen = Rcpp::wrap(Frederik_Dynprog_interface(input_data_vector, max_segments));
     return rcpp_result_gen;
 END_RCPP
 }
@@ -32,7 +46,8 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_FrederikSegmentationAlgorithms_Frederik_Dynprog", (DL_FUNC) &_FrederikSegmentationAlgorithms_Frederik_Dynprog, 0},
+    {"_FrederikSegmentationAlgorithms_Rcpp_Dynprog", (DL_FUNC) &_FrederikSegmentationAlgorithms_Rcpp_Dynprog, 2},
+    {"_FrederikSegmentationAlgorithms_Frederik_Dynprog_interface", (DL_FUNC) &_FrederikSegmentationAlgorithms_Frederik_Dynprog_interface, 2},
     {"_FrederikSegmentationAlgorithms_rcpp_hello_world", (DL_FUNC) &_FrederikSegmentationAlgorithms_rcpp_hello_world, 0},
     {NULL, NULL, 0}
 };

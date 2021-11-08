@@ -1,1 +1,1 @@
-((nil . ((compile-command . "R CMD INSTALL .."))))
+((nil . ((compile-command . "R -e 'Rcpp::compileAttributes(\"..\")'; R CMD INSTALL .."))))
