@@ -1,12 +1,14 @@
 Package: FrederikSegmentationAlgorithms
 Type: Package
-Title: What the Package Does in One 'Title Case' Line
-Version: 1.0
-Date: 2021-11-06
-Author: Your Name
-Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what the package does as one
-       or more full sentences.
-License: GPL (>= 2)
-Imports: Rcpp (>= 1.0.7)
+Title: Frederik Segmentation Algorithms
+Version: 2021.11.07
+Author: Frederik Gantzel
+Maintainer: Frederik Gantzel <fvg6@nau.edu>
+Description: Segmentation algorithms for CS599 "Unsupervised Learning"
+              R package project 2, NAU, Fall semester 2021
+License: GPL-3
+RoxygenNote: 7.1.2
 LinkingTo: Rcpp
+Depends: data.table
+Imports: Rcpp
+Suggests: testthat

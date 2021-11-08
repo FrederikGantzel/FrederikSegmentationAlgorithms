@@ -1,6 +1,6 @@
 #include "Frederik_Dynprog.h"
 
-int Frederik_Dynprog(
+int normal_cpp_dynprog(
   const double *data_input_vector, //the input data
   const int n_data_points, //number of data points
   const int max_segments, //maximum segments
@@ -11,8 +11,11 @@ int Frederik_Dynprog(
   if (n_data_points < 1) {
     return ERROR_DATA_VECTOR_MUST_CONTAIN_AT_LEAST_ONE_DATA_POINT;
   }
-  if (max_segments < 0) {
-    return ERROR_MAX_SEGMENTS_MUST_NOT_BE_LESS_THAN_ZERO;
+  if (max_segments < 1) {
+    return ERROR_MAX_SEGMENTS_MUST_BE_GREATER_THAN_ZERO;
+  }
+  if (max_segments > n_data_points) {
+    return ERROR_MAX_SEGMENTS_MUST_NOT_BE_GREATER_THAN_NDATA;
   }
   
   double cumul_sums_vec[n_data_points];

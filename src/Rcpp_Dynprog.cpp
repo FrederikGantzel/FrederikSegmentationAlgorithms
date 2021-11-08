@@ -31,7 +31,6 @@ NumericMatrix Rcpp_Dynprog
       NumericVector pos_last_end(size);
       
       std::iota(pos_last_end.begin(), pos_last_end.end(), prev_i);
-      Rcout << pos_last_end << "\n";
       
       NumericVector all_prev_costs(size);
       for(int iii=0; iii<size; iii++) {

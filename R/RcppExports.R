@@ -5,11 +5,7 @@ Rcpp_Dynprog <- function(input_data_vector, max_segments) {
     .Call(`_FrederikSegmentationAlgorithms_Rcpp_Dynprog`, input_data_vector, max_segments)
 }
 
-Frederik_Dynprog_interface <- function(input_data_vector, max_segments) {
-    .Call(`_FrederikSegmentationAlgorithms_Frederik_Dynprog_interface`, input_data_vector, max_segments)
-}
-
-rcpp_hello_world <- function() {
-    .Call(`_FrederikSegmentationAlgorithms_rcpp_hello_world`)
+Frederik_Dynprog <- function(input_data_vector, max_segments) {
+    .Call(`_FrederikSegmentationAlgorithms_Frederik_Dynprog`, input_data_vector, max_segments)
 }
 
