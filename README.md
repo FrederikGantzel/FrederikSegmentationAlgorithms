@@ -1,5 +1,5 @@
 # FrederikSegmentationAlgorithms
-Segmentation algorithms for CS599 "Unsipervised Learning" R package project 2, NAU, Fall semester 2021
+Segmentation algorithms for CS599 "Unsupervised Learning" R package project 2, NAU, Fall semester 2021
 
 ## Installation
 run the following R commands:
